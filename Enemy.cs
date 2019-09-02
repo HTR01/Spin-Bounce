@@ -13,6 +13,6 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, -634, 0), movementSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, 0, 0), movementSpeed * Time.deltaTime);
     }
 }

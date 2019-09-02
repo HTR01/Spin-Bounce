@@ -5,8 +5,7 @@ using UnityEngine;
 public class RandomSpawn : MonoBehaviour
 {
     public GameObject bullet;
-    int randomNumber;
-    
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +21,9 @@ public class RandomSpawn : MonoBehaviour
     public void SpawnRandom()
     {
         Instantiate(bullet, new Vector3(Random.Range(-1190, 1190), 750, 0), transform.rotation);
+        Instantiate(bullet, new Vector3(-1190, Random.Range(-740, 900), 0), transform.rotation);
+        Instantiate(bullet, new Vector3(1190, Random.Range(-740, 900), 0), transform.rotation);
+        Instantiate(bullet, new Vector3(Random.Range(-1190, 1190), -790, 0), transform.rotation);
 
 
     }
